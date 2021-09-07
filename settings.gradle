@@ -1,0 +1,6 @@
+rootProject.name = 'qbaqa-appium'
+include 'parametrized'
+include 'cucumber'
+include 'cucumber_calculator'
+include 'cucumber_translator'
+

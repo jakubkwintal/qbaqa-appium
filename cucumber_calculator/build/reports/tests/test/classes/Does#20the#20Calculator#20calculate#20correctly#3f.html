@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Does the Calculator calculate correctly?</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Does the Calculator calculate correctly?</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Does the Calculator calculate correctly?</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m23.30s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">75%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Calculation #4"></a>
+<h3 class="failures">Calculation #4</h3>
+<span class="code">
+<pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '172.18.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, deviceName: M21, platformName: android, platformVersion: 11, udid: R58N73CR1MD}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-M215F, deviceName: R58N73CR1MD, deviceScreenDensity: 450, deviceScreenSize: 1080x2340, deviceUDID: R58N73CR1MD, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 78, takesScreenshot: true, udid: R58N73CR1MD, viewportRect: {height: 2044, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cc759ea5-13a2-4880-ae57-8d8599fd3a6d
+*** Element info: {Using=accessibility id, value=5 Calculation result}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at calculator.StandardCalculator.nonNumericKey(StandardCalculator.java:23)
+	at calculator.StandardCalculatorSteps.lambda$new$2(StandardCalculatorSteps.java:31)
+	at ✽.I should receive 5(file:///C:/qbaqa/Projects/qbaqa-appium/cucumber_calculator/src/test/resources/calculator/standardCalculator.feature:6)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Calculation #1</td>
+<td class="success">21.550s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Calculation #2</td>
+<td class="success">20.671s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Calculation #3</td>
+<td class="success">18.936s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Calculation #4</td>
+<td class="failures">22.143s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+Scenario Outline: Calculation                # src/test/resources/calculator/standardCalculator.feature:9
+Starting the test scenario
+  Given launched Calculator                  # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:14)
+Multiplication: 4, 6
+  When I'm doing &quot;Multiplication&quot; on 4 and 6 # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:19)
+= 24
+  Then I should receive 24                   # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation          # src/test/resources/calculator/standardCalculator.feature:10
+Starting the test scenario
+  Given launched Calculator            # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:14)
+Division: 9, 2
+  When I'm doing &quot;Division&quot; on 9 and 2 # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:19)
+= 4.5
+  Then I should receive 4.5            # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation      # src/test/resources/calculator/standardCalculator.feature:11
+Starting the test scenario
+  Given launched Calculator        # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:14)
+Plus: 9, 7
+  When I'm doing &quot;Plus&quot; on 9 and 7 # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:19)
+= 16
+  Then I should receive 16         # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation       # src/test/resources/calculator/standardCalculator.feature:12
+Starting the test scenario
+  Given launched Calculator         # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:14)
+Minus: 7, 3
+  When I'm doing &quot;Minus&quot; on 7 and 3 # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:19)
+  Then I should receive 5           # calculator.StandardCalculatorSteps.&lt;init&gt;(StandardCalculatorSteps.java:27)
+      org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '172.18.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, deviceName: M21, platformName: android, platformVersion: 11, udid: R58N73CR1MD}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-M215F, deviceName: R58N73CR1MD, deviceScreenDensity: 450, deviceScreenSize: 1080x2340, deviceUDID: R58N73CR1MD, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 78, takesScreenshot: true, udid: R58N73CR1MD, viewportRect: {height: 2044, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cc759ea5-13a2-4880-ae57-8d8599fd3a6d
+*** Element info: {Using=accessibility id, value=5 Calculation result}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at calculator.StandardCalculator.nonNumericKey(StandardCalculator.java:23)
+	at calculator.StandardCalculatorSteps.lambda$new$2(StandardCalculatorSteps.java:31)
+	at âś˝.I should receive 5(file:///C:/qbaqa/Projects/qbaqa-appium/cucumber_calculator/src/test/resources/calculator/standardCalculator.feature:6)
+
+End of the test.
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>wrz 07, 2021 2:49:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:49:38 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:49:56 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:50:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 2021-09-07 14:50:25</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Does the Calculator calculate correctly?" tests="4" skipped="0" failures="1" errors="0" timestamp="2021-09-07T12:49:01" hostname="CQ6GRJ2" time="83.3">
+  <properties/>
+  <testcase name="Calculation #1" classname="Does the Calculator calculate correctly?" time="21.55"/>
+  <testcase name="Calculation #2" classname="Does the Calculator calculate correctly?" time="20.671"/>
+  <testcase name="Calculation #3" classname="Does the Calculator calculate correctly?" time="18.936"/>
+  <testcase name="Calculation #4" classname="Does the Calculator calculate correctly?" time="22.143">
+    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CQ6GRJ2', ip: '172.18.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, deviceName: M21, platformName: android, platformVersion: 11, udid: R58N73CR1MD}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-M215F, deviceName: R58N73CR1MD, deviceScreenDensity: 450, deviceScreenSize: 1080x2340, deviceUDID: R58N73CR1MD, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 78, takesScreenshot: true, udid: R58N73CR1MD, viewportRect: {height: 2044, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: cc759ea5-13a2-4880-ae57-8d8599fd3a6d&#10;*** Element info: {Using=accessibility id, value=5 Calculation result}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '172.18.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, deviceName: M21, platformName: android, platformVersion: 11, udid: R58N73CR1MD}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-M215F, deviceName: R58N73CR1MD, deviceScreenDensity: 450, deviceScreenSize: 1080x2340, deviceUDID: R58N73CR1MD, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 78, takesScreenshot: true, udid: R58N73CR1MD, viewportRect: {height: 2044, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cc759ea5-13a2-4880-ae57-8d8599fd3a6d
+*** Element info: {Using=accessibility id, value=5 Calculation result}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at calculator.StandardCalculator.nonNumericKey(StandardCalculator.java:23)
+	at calculator.StandardCalculatorSteps.lambda$new$2(StandardCalculatorSteps.java:31)
+	at ✽.I should receive 5(file:///C:/qbaqa/Projects/qbaqa-appium/cucumber_calculator/src/test/resources/calculator/standardCalculator.feature:6)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+Scenario Outline: Calculation                # src/test/resources/calculator/standardCalculator.feature:9
+Starting the test scenario
+  Given launched Calculator                  # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:14)
+Multiplication: 4, 6
+  When I'm doing "Multiplication" on 4 and 6 # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:19)
+= 24
+  Then I should receive 24                   # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation          # src/test/resources/calculator/standardCalculator.feature:10
+Starting the test scenario
+  Given launched Calculator            # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:14)
+Division: 9, 2
+  When I'm doing "Division" on 9 and 2 # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:19)
+= 4.5
+  Then I should receive 4.5            # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation      # src/test/resources/calculator/standardCalculator.feature:11
+Starting the test scenario
+  Given launched Calculator        # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:14)
+Plus: 9, 7
+  When I'm doing "Plus" on 9 and 7 # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:19)
+= 16
+  Then I should receive 16         # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:27)
+End of the test.
+
+Scenario Outline: Calculation       # src/test/resources/calculator/standardCalculator.feature:12
+Starting the test scenario
+  Given launched Calculator         # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:14)
+Minus: 7, 3
+  When I'm doing "Minus" on 7 and 3 # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:19)
+  Then I should receive 5           # calculator.StandardCalculatorSteps.<init>(StandardCalculatorSteps.java:27)
+      org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '172.18.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, databaseEnabled: false, desired: {appActivity: com.sec.android.app.popupca..., appPackage: com.sec.android.app.popupca..., autoGrantPermissions: true, deviceName: M21, platformName: android, platformVersion: 11, udid: R58N73CR1MD}, deviceApiLevel: 30, deviceManufacturer: samsung, deviceModel: SM-M215F, deviceName: R58N73CR1MD, deviceScreenDensity: 450, deviceScreenSize: 1080x2340, deviceUDID: R58N73CR1MD, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 78, takesScreenshot: true, udid: R58N73CR1MD, viewportRect: {height: 2044, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cc759ea5-13a2-4880-ae57-8d8599fd3a6d
+*** Element info: {Using=accessibility id, value=5 Calculation result}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at calculator.StandardCalculator.nonNumericKey(StandardCalculator.java:23)
+	at calculator.StandardCalculatorSteps.lambda$new$2(StandardCalculatorSteps.java:31)
+	at âś˝.I should receive 5(file:///C:/qbaqa/Projects/qbaqa-appium/cucumber_calculator/src/test/resources/calculator/standardCalculator.feature:6)
+
+End of the test.
+]]></system-out>
+  <system-err><![CDATA[wrz 07, 2021 2:49:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:49:38 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:49:56 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:50:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

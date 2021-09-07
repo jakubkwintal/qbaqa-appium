@@ -1,0 +1,4 @@
+fromLanguage,toLanguage,text,translation
+English,French,Hello,Bonjour
+English,Polish,yes,tak
+French,Spanish,"Quelle heure est-il?","¿Qué hora es?"

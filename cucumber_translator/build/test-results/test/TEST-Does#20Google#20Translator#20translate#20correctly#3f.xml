@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Does Google Translator translate correctly?" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-07T12:45:46" hostname="CQ6GRJ2" time="128.851">
+  <properties/>
+  <testcase name="Translation #1" classname="Does Google Translator translate correctly?" time="41.196"/>
+  <testcase name="Translation #2" classname="Does Google Translator translate correctly?" time="42.79"/>
+  <testcase name="Translation #3" classname="Does Google Translator translate correctly?" time="44.864"/>
+  <system-out><![CDATA[
+Scenario Outline: Translation            # src/test/resources/translatorGoogle/translation.feature:9
+Starting the test scenario for English and French
+  Given languages "English" and "French" # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:18)
+Hello
+  When I type "Hello"                    # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:27)
+Bonjour
+  Then I should receive "Bonjour"        # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:33)
+End of the test.
+
+Scenario Outline: Translation            # src/test/resources/translatorGoogle/translation.feature:10
+Starting the test scenario for English and Polish
+  Given languages "English" and "Polish" # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:18)
+yes
+  When I type "yes"                      # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:27)
+tak
+  Then I should receive "tak"            # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:33)
+End of the test.
+
+Scenario Outline: Translation            # src/test/resources/translatorGoogle/translation.feature:11
+Starting the test scenario for French and Spanish
+  Given languages "French" and "Spanish" # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:18)
+Quelle heure est-il?
+  When I type "Quelle heure est-il?"     # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:27)
+?Qué hora es?
+  Then I should receive "ÂżQuĂ© hora es?"  # translatorGoogle.TranslationSteps.<init>(TranslationSteps.java:33)
+End of the test.
+]]></system-out>
+  <system-err><![CDATA[wrz 07, 2021 2:46:10 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:46:42 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+wrz 07, 2021 2:47:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

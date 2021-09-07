@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="translatorGoogle.TranslationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-06T21:34:47" hostname="CQ6GRJ2" time="90.831">
+  <properties/>
+  <testcase name="[1] English, French, Hello, Bonjour" classname="translatorGoogle.TranslationTest" time="17.463"/>
+  <testcase name="[2] English, Polish, yes, tak" classname="translatorGoogle.TranslationTest" time="34.736"/>
+  <testcase name="[3] French, Spanish, Quelle heure est-il?, ¿Qué hora es?" classname="translatorGoogle.TranslationTest" time="38.605"/>
+  <system-out><![CDATA[Starting the test....
+End of the test.
+]]></system-out>
+  <system-err><![CDATA[wrz 06, 2021 11:34:46 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
